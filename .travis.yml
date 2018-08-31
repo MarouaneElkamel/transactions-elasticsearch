@@ -33,7 +33,7 @@ script:
   - chmod +x mvnw
   - ./mvnw clean test
   - yarn test
-  - ./mvnw org.jacoco:jacoco-maven-plugin:prepare-agent sonar:sonar -Dsonar.organization=Elkamel Marouane -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+  - ./mvnw org.jacoco:jacoco-maven-plugin:prepare-agent sonar:sonar -Dsonar.projectKey=MarouaneElkamel_transactions-elasticsearch -Dsonar.organization=marouaneelkamel-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
   - ./mvnw verify -Pprod -DskipTests
 notifications:
   webhooks:
