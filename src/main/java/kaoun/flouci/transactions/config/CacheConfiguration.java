@@ -38,6 +38,7 @@ public class CacheConfiguration {
             cm.createCache(kaoun.flouci.transactions.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(kaoun.flouci.transactions.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(kaoun.flouci.transactions.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(kaoun.flouci.transactions.domain.Transaction.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
